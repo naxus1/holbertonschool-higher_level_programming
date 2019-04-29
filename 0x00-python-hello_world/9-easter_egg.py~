@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+_is = "is"
+_than = "than"
+_better = "better"
+_to = "to"
+_the = "the"
+_it = "it"
+
+str = "The Zen of Python, by Tim Peters \n\nExplicit" +  _is
+
+print(str)
