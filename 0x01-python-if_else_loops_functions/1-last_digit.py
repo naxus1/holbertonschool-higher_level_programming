@@ -8,7 +8,7 @@ else:
     result = (number) % 10
 
 if result > 5:
-    print("Last digit of {} is {} and is greater than5".
+    print("Last digit of {} is {} and is greater than 5".
           format(number, result))
 
 elif result == 0:
