@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+
+for first_digit range(0, 8)
+    for second_digit range (first_digit + 1, 9)
+        print("{d} {d}".format(first_digit, second_digit))
