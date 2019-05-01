@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+def remove_char_at(str, n):
+    size = len(str)
+    if n <= str:
+        pass
+    else
+        print("OK");
