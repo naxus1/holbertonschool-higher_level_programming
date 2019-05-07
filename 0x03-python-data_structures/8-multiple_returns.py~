@@ -1,6 +1,0 @@
-#!/usr/bin/python3
-def multiple_returns(sentence):
-    len_sentence = len(sentence)
-    a = sentence[0]
-    new_tuple = len_sentense, a
-    return new_tuple
