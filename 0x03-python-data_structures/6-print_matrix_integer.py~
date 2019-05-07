@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+def print_matrix_integer(matrix=[[]]):
+    len_matrix = len(matrix)
+    print(len_matrix)
