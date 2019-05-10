@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    a = a_dictionary.copy()
+    list_win = []
+    for i in a:
+        list_win[i] = a[i]
+
+    print(type(list_win))
