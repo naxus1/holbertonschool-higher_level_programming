@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+def roman_to_int(roman_string):
+    dict_roman = {'I': 1, 'V': 5, 'X' : 10, 'L': 50, 'C': 100, 'D': 500, M: 1000}
+    num_ant = 0
+    suma = 0
+    for number in roman_string:
+        if roman_string.get(number) <= num_ant:
+            suma += roman_string.get(number)
+        else:
+            suma += (roman_string.get(number) - (2 * num_ant))
+        num_ant = roman_string.get(number)
+    return number
