@@ -1,0 +1,39 @@
+("emacs" "3-safe_print_division.py")
+Loading 00debian-vars...done
+Unable to load color "misterioso" [10 times]
+Loading term/xterm...done
+For information about GNU Emacs and the GNU system, type <f1> C-a.
+(New file)
+Can't guess python-indent-offset, using defaults: 4
+Loading vc-git...done
+Auto-saving...done
+Closes try:
+call-interactively: End of buffer
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py
+(No changes need to be saved)
+Auto-saving...done
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py
+(No changes need to be saved)
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py
+Mark set
+Closes except:
+Mark set
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py
+Saving file /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-safe_print_division.py...
+Wrote /home/vagrant/holbertonschool-higher_level_programming/0x05-python-exceptions/3-s
+
+
+
+
+
+
+afe_print_division.py
+Auto-saving...done
+Quit [2 times]
+Quit
