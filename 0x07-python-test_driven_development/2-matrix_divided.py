@@ -33,7 +33,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
 
     if not div:
-       raise  TypeError("matrix_divided() missing 1 required positional" +
+        raise TypeError("matrix_divided() missing 1 required positional" +
                         "argument: 'div'")
 
     if div == 0:
