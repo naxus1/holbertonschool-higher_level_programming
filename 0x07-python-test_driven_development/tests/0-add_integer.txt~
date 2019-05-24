@@ -1,0 +1,15 @@
+'''
+this is a test from function that add two numbers:
+>>> add_integer(2, 3)
+5
+
+>>> add_integer(-1, 4)
+3
+
+>>> add_integer("holamana", "asdasdasd")
+a must be an integer or b must be an integer
+
+>>> add_integer(" ", " ")
+a must be an integer or b must be an integer
+
+'''
