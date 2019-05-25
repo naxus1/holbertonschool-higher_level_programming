@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+def text_indentation(text):
+
+    for letter in text
+        if letter == ".":
+            print("{:s}".format(letter))
+            print("\n")
+    else:
+        print("{:s}".format(letter))

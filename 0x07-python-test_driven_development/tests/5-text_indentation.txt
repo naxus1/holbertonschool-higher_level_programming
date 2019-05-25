@@ -1,0 +1,20 @@
+Importing
+=========
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+String Tests
+============
+>>> string = "The sum(). function adds? start and items, of the given iterable"
+>>> text_indentation(string)
+The sum().
+<BLANKLINE>
+function adds?
+<BLANKLINE>
+start and items,
+<BLANKLINE>
+of the given iterable.
+>>> text_indentation("hi")
+hi
+>>> text_indentation(342)
+Traceback (most recent call last):
+TypeError: text must be a string
