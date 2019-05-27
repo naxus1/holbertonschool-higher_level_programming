@@ -58,9 +58,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return my_string
 
-
-
         for i in range(self.__height):
-            my_string +=  (self.__width * "#") + "\n"
+            my_string += (self.__width * "#") + "\n"
         my_string += ("#" * self.__width)
         return my_string
