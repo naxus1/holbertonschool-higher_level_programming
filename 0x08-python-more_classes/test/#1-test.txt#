@@ -1,0 +1,9 @@
+```1-rectangle``` funtion
+============================
+
+Using ```add_integer```
+-----------------------
+
+Step 1
+======
+>>> add_integer = __import__("0-add_integer").add_integer
