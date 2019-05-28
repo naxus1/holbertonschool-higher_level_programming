@@ -15,6 +15,12 @@ def matrix_divided(matrix, div):
         raise TypeError("matrix must be a matrix (list" +
                         "f lists) of integers/floats")
 
+    if div == float('inf') or div == -float('inf'):
+        raise OverflowError("cannot convert float infinity to integer")
+
+    if div == float('NaN') or div != div:
+        raise ValueError("cannot convert float NaN to integer")
+
     """Define size of such as row"""
     tam_ini = len(matrix[0])
     for row in range(len(matrix)):
