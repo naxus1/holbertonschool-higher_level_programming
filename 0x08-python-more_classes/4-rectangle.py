@@ -57,9 +57,13 @@ class Rectangle:
         my_string = ""
         if self.__width == 0 or self.__height == 0:
             return my_string
+
         for i in range(self.__height):
-            if i < self.__height - 1:
-                my_string += (self.__width * "#") + "\n"
-            else:
-                my_string += (self.__width * "#")
+            my_string += (self.__width * "#") + "\n"
+        my_string += ("#" * self.__width)
+        return my_string
+
+    def __repr__(self):
+        """Print repr"""
+        my_string = "Rectangle({:d}, {:d})".format(self.__width, self.__height)
         return my_string
