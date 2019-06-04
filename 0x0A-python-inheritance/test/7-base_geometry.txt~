@@ -1,0 +1,19 @@
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+>>> bg.integer_validator("age", [3])
+Traceback (most recent call last):
+TypeError: age must be an integer
+>>> bg.integer_validator(, 12)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+>>> bg.integer_validator("string", -43)
+Traceback (most recent call last):
+ValueError: string must be greater than 0
+>>> bg.integer_validator("age", {3,4})
+Traceback (most recent call last):
+TypeError: age must be an integer
+>>> bg.integer_validator("age",None)
+Traceback (most recent call last):
+TypeError: age must be an integer
