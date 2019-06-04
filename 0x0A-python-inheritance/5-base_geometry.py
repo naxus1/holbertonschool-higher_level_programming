@@ -2,5 +2,6 @@
 
 """BaseGeometry Class module"""
 
+
 class BaseGeometry():
     pass
