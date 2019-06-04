@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+"""Rectangle Subclass"""
+
+Square = __import__('10-square').Square 
+
+
+class Square(BaseGeometry):
