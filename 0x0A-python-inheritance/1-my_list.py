@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-class MyList(list):
-    def __init__(self):
-        list.__init__(self)
+"""
+Class MyList
+"""
 
+
+class MyList(list):
+    """
+    Prints inherited sorted list
+    """
     def print_sorted(self):
-        print (sorted(self))
+        print(sorted(self))
