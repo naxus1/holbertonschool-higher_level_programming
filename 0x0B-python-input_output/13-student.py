@@ -23,7 +23,7 @@ class Student():
         return my_dict
 
     def reload_from_json(self, json):
-        """Relplaces values in our class instance """
+        """change values in our class instance """
         if not json:
             return
         self.__dict__ = json
