@@ -1,25 +1,30 @@
-```my_list``` Module
+The ``1-my_list`` module
 ============================
 
-Using ```add_integer```
+Using ``print_sorted``
 -----------------------
 
-Step 1
-======
->>> MyList = __import__('1-my_list').MyList
->>> my_list = MyList()
->>> my_list.append(4)
->>> my_list.append(9)
->>> my_list.append(0)
->>> my_list.append(16)
->>> my_list.append(2)
->>> my_list.append(14)
->>> print(my_list)
-[4, 9, 0, 16, 2, 14]
->>> print(my_list.print_sorted)
-[0, 2, 4, 9, 14, 16]
->>> print(my_list)
-[4, 9, 0, 16, 2, 14]
->>> my_list.append(-12)
->>> print(my_list.print_sorted)
-[-12, 0, 2, 4, 9, 14, 16]
+Now use it:
+
+    >>> my_list = MyList()
+
+    >>> my_list.print_sorted()
+    []
+
+    >>> my_list.append(1)
+
+    >>> my_list.append(4)
+
+    >>> my_list.append(2)
+
+    >>> my_list.append(3)
+
+    >>> my_list.append(5)
+
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+    >>> my_list.append(-5)
+
+    >>> my_list.print_sorted()
+    [-5, 1, 2, 3, 4, 5]
