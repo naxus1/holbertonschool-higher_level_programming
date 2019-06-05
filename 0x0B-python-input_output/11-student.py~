@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Class student"""
+""" """
 
 
 class Student():
@@ -12,5 +12,4 @@ class Student():
         self.age = age
 
     def to_json(self):
-        """ Return representacion json""
         return self.__dict__
