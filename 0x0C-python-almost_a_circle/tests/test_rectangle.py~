@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+
+from models.rectangle import Rectangle
+from models.base import Base
+import unittest
+
+class TestRectangle(unittest.TestCase):
+
+    def test_rectangle_id(self):
+        r1 = Rectangle(1, 2, 3, 4, 50)
+        self.assertEqual(r1.id, 50)
+
+    def test_rectangle_width_and_height(self):
+        r2 = Rectangle(10, 20, 5, 5)
+        self.assertEqual(r2.width, 10)
+        self.assertEqual(r2.height, 20)
+
+    def test_rectange_x_y(self):
+        r3 = Rectangle(1, 2, 50, 50, 10)
+        self.assertEqual(r3.x, 50)
+        self.assertEqual(r3.y, 50)
