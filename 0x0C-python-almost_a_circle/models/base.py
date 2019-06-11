@@ -24,17 +24,17 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ """
+        """this method saved representation of cls"""
         my_array = []
         file_to_save = type(list_objs[0]).__name__ + ".json"
 
         if list_objs is None:
             with open(file_to_save, "w") as file:
-                json.dump("[]", file)
+                 file.write(cls.to_json_string([]))
 
         else:
             for obj in list_objs:
                 my_array.append(obj.to_dictionary())
 
-        with open(file_to_save, "w", encoding="utf-8") as file:
+        with open(file_to_save, "w") as file:
             file.write(cls.to_json_string(my_array))
