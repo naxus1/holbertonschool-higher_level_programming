@@ -43,6 +43,6 @@ class Base:
     def from_json_string(json_string):
         """This method returns the list of the JSON string representation"""
         if not json_string:
-            return("[]")
+            return([])
         else:
             return(json.loads(json_string))
