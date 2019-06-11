@@ -1,6 +1,7 @@
 #!/bin/usr/python3
 
 from models.base import Base
+import json
 
 """ """
 
@@ -111,3 +112,8 @@ class Rectangle(Base):
                     self.x = value
                 if key == "y":
                     self.y == value
+
+    def to_dictionary(self):
+        """Return object to dictionary"""
+        return  {'x': self.x, 'y': self.y, 'id': self.id,
+                  'height': self.height, 'width': self.width}

@@ -39,3 +39,7 @@ class Base():
 
         with open(file_to_save, "w", encoding = "utf-8") as file:
             file.write(cls.to_json_string(my_array))
+
+    def from_json_string(json_string):
+        """ """
+        
