@@ -28,7 +28,7 @@ class Base:
         my_array = []
         file_to_save = type(list_objs[0]).__name__ + ".json"
 
-        if list_objs is None:
+        if not list_objs:
             with open(file_to_save, "w") as file:
                  file.write(cls.to_json_string([]))
 
@@ -36,5 +36,5 @@ class Base:
             for obj in list_objs:
                 my_array.append(obj.to_dictionary())
 
-        with open(file_to_save, "w") as file:
-            file.write(cls.to_json_string(my_array))
+            with open(file_to_save, "w") as file:
+                file.write(cls.to_json_string(my_array))
