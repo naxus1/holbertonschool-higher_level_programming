@@ -50,11 +50,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """This method returns an instance with all attributes already set"""
-        is_object = cls.__name__
 
-        if is_object == "Square":
+        if cls.__name__ == "Square":
             obj = cls(3)
-        elif is_object == "Rectangle":
+        elif cls.__name__ == "Rectangle":
             obj = cls(2, 5)
         obj.update(**dictionary)
         return obj
