@@ -1,7 +1,6 @@
 #!/bin/usr/python3
 """Class rectangle"""
 from models.base import Base
-import json
 
 
 class Rectangle(Base):
@@ -19,21 +18,6 @@ class Rectangle(Base):
         """Return width of triangle"""
         return(self.__width)
 
-    @property
-    def height(self):
-        """Return Height of triangle"""
-        return(self.__height)
-
-    @property
-    def x(self):
-        """Return x"""
-        return(self.__x)
-
-    @property
-    def y(self):
-        """Return y"""
-        return(self.__y)
-
     @width.setter
     def width(self, value):
         """Set value of width"""
@@ -42,6 +26,11 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
+
+    @property
+    def height(self):
+        """Return Height of triangle"""
+        return(self.__height)
 
     @height.setter
     def height(self, value):
@@ -52,6 +41,11 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
+    @property
+    def x(self):
+        """Return x"""
+        return(self.__x)
+
     @x.setter
     def x(self, value):
         """Set value of x"""
@@ -60,6 +54,11 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
+
+    @property
+    def y(self):
+        """Return y"""
+        return(self.__y)
 
     @y.setter
     def y(self, value):
