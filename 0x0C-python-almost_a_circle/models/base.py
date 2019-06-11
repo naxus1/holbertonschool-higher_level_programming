@@ -38,3 +38,11 @@ class Base:
 
             with open(file_to_save, "w") as file:
                 file.write(cls.to_json_string(my_array))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """This method returns the list of the JSON string representation"""
+        if not json_string:
+            return("[]")
+        else:
+            return(json.loads(json_string))
