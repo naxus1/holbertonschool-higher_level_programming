@@ -30,7 +30,7 @@ class Base:
 
         if not list_objs:
             with open(file_to_save, "w") as file:
-                 file.write(cls.to_json_string([]))
+                file.write(cls.to_json_string([]))
 
         else:
             for obj in list_objs:
