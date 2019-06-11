@@ -24,9 +24,9 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """this method saved representation of cls"""
+        """this method saved representation of object"""
         my_array = []
-        file_to_save = type(list_objs[0]).__name__ + ".json"
+        file_to_save = cls.__name__ + ".json"
 
         if not list_objs:
             with open(file_to_save, "w") as file:
