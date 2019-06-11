@@ -30,7 +30,7 @@ class Base:
 
         if list_objs is None:
             with open(file_to_save, "w") as file:
-                json.dump([], file)
+                json.dump("[]", file)
 
         else:
             for obj in list_objs:
