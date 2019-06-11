@@ -88,7 +88,7 @@ class Rectangle(Base):
                                                        self.__y, self.__width,
                                                        self.__height))
 
-    def  update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """Update values of triangle"""
 
         if len(args) and args is not None:
@@ -115,5 +115,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Return object to dictionary"""
-        return  {'x': self.x, 'y': self.y, 'id': self.id,
-                  'height': self.height, 'width': self.width}
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
