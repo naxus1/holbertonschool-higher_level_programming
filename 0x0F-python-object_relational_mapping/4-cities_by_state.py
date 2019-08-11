@@ -18,6 +18,6 @@ if __name__ == "__main__":
     FROM cities JOIN states ON cities.state_id = states.id
     ORDER BY cities.id ASC"""
     cur.execute(query)
-    allData = cur_sor.fetchall()
+    allData = cur.fetchall()
     for row in allData:
         print(row)

@@ -17,11 +17,10 @@ if __name__ == "__main__":
                          db=argv[3])
 
     cur = db.cursor()
-    query = """SELECT * FROM states
-    WHERE name LIKE '{:s}'
-    ORDER BY id ASC""".format(argv[4])
+    cur = execute("""SELECT * FROM states
+    WHERE name LIKE %s
+    ORDER BY id ASC""", (argv[4]))
 
-    cur.execute(query)
-    allData = cur_sor.fetchall()
+    allData = cur.fetchall()
     for row in allData:
         print(row)
