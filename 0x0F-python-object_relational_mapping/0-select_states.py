@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""script that lists all states from the database hbtn_0e_0_usa"""
+""" This script that lists all states """
 from sys import argv
 import MySQLdb
 
@@ -9,8 +9,11 @@ if __name__ == "__main__":
                          user=argv[1],
                          passwd=argv[2],
                          db=argv[3])
-    cur_sor = db.cursor()
-    cur_sor.execute("SELECT * FROM states ORDER BY id ASC")
-    all_data = cur_sor.fetchall()
-    for row in all_data:
+    cur = db.cursor()
+    cur.execute("""SELECT * FROM states ORDER BY id""")
+    allData = cur.fetchall()
+    for row in allData:
         print(row)
+
+    cur.close()
+    db.close()
