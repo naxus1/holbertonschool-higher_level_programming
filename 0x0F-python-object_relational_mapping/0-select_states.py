@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ This script that lists all states """
+
 from sys import argv
 import MySQLdb
 
