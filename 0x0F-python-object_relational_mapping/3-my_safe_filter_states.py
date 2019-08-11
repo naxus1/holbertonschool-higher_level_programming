@@ -14,9 +14,9 @@ if __name__ == "__main__":
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur = execute("""SELECT * FROM states
-    WHERE name=%s
-    ORDER BY states.id ASC""", (argv[4],))
+    cur = execute("SELECT * FROM states WHERE states.name = %s", (argv[4],))
     allData = cur.fetchall()
     for row in allData:
         print(row)
+    cur.close()
+    conn.close()
