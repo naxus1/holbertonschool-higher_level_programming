@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""script that lists all State objects that contain the letter a
 """
-List all State objects with a
-"""
+
 if __name__ == "__main__":
     import sys
     from model_state import Base, State
