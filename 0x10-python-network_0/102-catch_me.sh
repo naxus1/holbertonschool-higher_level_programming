@@ -1,3 +1,3 @@
 #!/bin/bash
-# get status code
-curl -s -X PUT -L 34.206.234.184:5000/catch_me -d user_id=98
+# Send Header
+curl -s -L -H"X-HolbertonSchool-User-Id:98" -H "Origin: HolbertonSchool" -X PUT -d "user_id=98" 0.0.0.0:5000/catch_me
