@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let numFact = process.argv.slice(2);
+const numFact = process.argv.slice(2);
 let res = 0;
 
 function factorial (n) {
