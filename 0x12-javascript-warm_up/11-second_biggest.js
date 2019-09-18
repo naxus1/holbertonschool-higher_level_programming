@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const arraNums = process.argv.slice(2);
+const arrayNums = process.argv.slice(2);
 let maxNum = 0;
 
 if (arrayNums.length > 1) {
