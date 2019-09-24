@@ -1,8 +1,7 @@
 #!/usr/bin/node
-/* script that reads and prints the content of a file. */
-const f = require('fs');
-
-f.readFile(process.argv[2], 'utf-8', (err, data) => {
+/* Import module fs to open and read a file */
+const file = require('fs');
+file.readFile(process.argv[2], 'utf-8', (err, data) => {
   if (err) {
     console.log(err);
   } else {
