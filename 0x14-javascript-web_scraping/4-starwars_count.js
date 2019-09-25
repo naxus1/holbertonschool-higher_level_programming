@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let request = require('request');
+const request = require('request');
 const url = process.argv[2];
 let counter = 0;
 request(url, function (error, response, text) {
