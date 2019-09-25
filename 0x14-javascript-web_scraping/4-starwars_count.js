@@ -1,22 +1,18 @@
 #!/usr/bin/node
-const request = require('request');
+let request = require('request');
 const url = process.argv[2];
-let count = 0;
-let iter;
-
-request.get(url, (err, response, content) => {
-  if (err) {
-    return console.log(err);
-  }
-  let allContent = JSON.parse(content);
-  let onlyFilms = allContent['results'];
-  for (i = 0; i < onlyFilms.length; i++) {
-    let characterList = onlyFilms[i]['characters'];
-    for (let j = 0; j < charList.length; j++) {
-      if (charList[j].includes('18')) {
-        count++;
+let counter = 0;
+request(url, function (error, response, text) {
+  let movies = JSON.parse(text).results;
+  if (!error) {
+    for (let cc in movies) {
+      let ml = movies[cc].characters;
+      for (let bc in ml) {
+        if (ml[bc].includes('18')) {
+          counter += 1;
+        }
       }
     }
+    console.log(counter);
   }
-  console.log(count);
-})
+});
